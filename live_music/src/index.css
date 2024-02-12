@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto' !important;
+  background-image: linear-gradient(to top right, rgb(0, 0, 0), rgba(0, 0, 0, 0)) !important;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.carousalImage {
+  filter: brightness(30%);
+  object-fit: contain !important;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-btn:hover{
+  background-color: gray;
+}
+
+.overall-flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-flex{
+  height: 90vh;
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-h{
+  font-size: 50px;
+}
+
+#landing-img{
+  max-width: 35rem;
+  mix-blend-mode: screen;
+}
+
+@media screen and (max-width: 1250px) {  
+  #landing-img{
+    max-width: 30rem;
+  }
+  .title-h {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .overall-flex {
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-flex {
+    text-align: center;
+    height: 50vw;
+  }
+}
+
+.signup{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-btn{
+  width:  100%;
+}
+
+.loginInput{
+  width: 300px;
+}
+
+.genre {
+  margin-top: 20vh;
+  display: grid;
+  grid-template-columns: repeat(1fr, 2fr, 1fr);
+  font-size: 26px;
+  row-gap: 10px;
+}
+
+.genre > h1{
+  font-size: 42px;
+}
+
+.genre > h1,div{
+  grid-column: 2/3;
+}
